@@ -28,7 +28,7 @@ public class EclipseLinkConfig extends JpaBaseConfiguration {
     @Override
     protected Map<String, Object> getVendorProperties() {
         return ImmutableMap.of(
-                "eclipselink.weaving", "false",
+                "eclipselink.weaving", "static",
                 "eclipselink.ddl-generation", "drop-and-create-tables"
         );
     }
