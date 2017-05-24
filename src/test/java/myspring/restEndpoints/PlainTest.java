@@ -18,7 +18,7 @@ public class PlainTest extends UnitTest {
 
     @Test
     public void findFirst() throws Exception {
-        Optional<Integer> i = List.of(1, 2, 3, 4, 5, 6, 7).findFirst(e -> e % 2 == 0).toJavaOptional();
+        Optional<Integer> i = List.of(1, 2, 3, 4, 5, 6, 7).find(e -> e % 2 == 0).toJavaOptional();
 
         System.out.println(i);
     }
